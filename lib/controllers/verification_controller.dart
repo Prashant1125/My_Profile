@@ -10,11 +10,11 @@ class VerificationController extends GetxController {
   Color getColor(int status) {
     switch (status) {
       case 0:
-        return ColorConstant.unVerifiedStatusColor;
+        return ColorConstant.sparentOverlay;
       case 1:
-        return ColorConstant.verifiedStatusColor;
+        return ColorConstant.prinmaryGreen;
       default:
-        return ColorConstant.unVerifiedStatusColor;
+        return ColorConstant.sparentOverlay;
     }
   }
 

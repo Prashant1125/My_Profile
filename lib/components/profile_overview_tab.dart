@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_profile/components/custom_listtile.dart';
 import 'package:my_profile/components/profile_icon.dart';
 import 'package:my_profile/components/verification_status.dart';
+import 'package:my_profile/utils/color_constants.dart';
 
 class ProfileOverviewTab extends StatelessWidget {
   const ProfileOverviewTab({super.key});
@@ -12,8 +13,8 @@ class ProfileOverviewTab extends StatelessWidget {
       height: 88,
       child: Card(
         elevation: 30,
-        color: const Color(0xFF55A6C4).withOpacity(0.5),
-        child: const Padding(
+        color: ColorConstant.cardColor,
+        child: Padding(
           padding: EdgeInsets.all(8.0),
           child: CustomListtile(
             leading: ProfileIcon(),
@@ -23,7 +24,7 @@ class ProfileOverviewTab extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   fontStyle: FontStyle.italic,
                   fontSize: 25,
-                  color: Colors.white),
+                  color: ColorConstant.pureWhite),
             ),
             subtitle: Text(
               'Manager/Owner',
@@ -31,9 +32,9 @@ class ProfileOverviewTab extends StatelessWidget {
                   fontSize: 14,
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w500,
-                  color: Color(0xFFB8FE22)),
+                  color: ColorConstant.prinmaryGreen),
             ),
-            trailing: VerificationStatus(
+            trailing: const VerificationStatus(
               status: 0,
             ),
           ),
