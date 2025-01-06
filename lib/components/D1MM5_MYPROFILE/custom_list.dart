@@ -24,9 +24,6 @@ class CustomListtile extends StatelessWidget {
             if (subtitle != null) subtitle!,
           ],
         ),
-        // const SizedBox(
-        //   width: 10,
-        // ),
         const Spacer(),
         if (trailing != null) trailing!,
       ],

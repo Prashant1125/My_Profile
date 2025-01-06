@@ -5,16 +5,14 @@ import 'package:my_profile/utils/image_constants.dart';
 import 'package:my_profile/utils/string_constant.dart';
 
 class VerificationController extends GetxController {
-  // final RxInt status = 0.obs;
-
   Color getColor(int status) {
     switch (status) {
       case 0:
-        return ColorConstant.sparentOverlay;
+        return ColorConstant.sparentOverlay.withOpacity(.7);
       case 1:
-        return ColorConstant.prinmaryGreen;
+        return ColorConstant.primaryGreen.withOpacity(.3);
       default:
-        return ColorConstant.sparentOverlay;
+        return ColorConstant.sparentOverlay.withOpacity(.7);
     }
   }
 
