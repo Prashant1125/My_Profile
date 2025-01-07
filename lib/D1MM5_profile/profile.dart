@@ -15,7 +15,7 @@ class _MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorConstant.appBar.withOpacity(.5),
+      backgroundColor: ColorConstant.pureBlack.withOpacity(.5),
       body: SafeArea(
         child: Container(
           height: double.infinity,
@@ -24,21 +24,24 @@ class _MyProfileState extends State<MyProfile> {
                   image: AssetImage(ImageConstants.yoga),
                   fit: BoxFit.cover,
                   opacity: .2)),
-          child: Column(
-            children: [
-              const ProfileOverviewTab(),
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 10,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const ProfileOverviewTab(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 10,
+                  ),
+                  child: Divider(
+                    thickness: 3,
+                    color: ColorConstant.primaryBlue.withOpacity(.5),
+                  ),
                 ),
-                child: Divider(
-                  thickness: 1.5,
-                  color: ColorConstant.primaryBlue.withOpacity(.5),
-                ),
-              ),
-              const SettingsContainer()
-            ],
+                const SettingsContainer()
+              ],
+            ),
           ),
         ),
       ),

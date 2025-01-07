@@ -19,32 +19,26 @@ class ElementTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: EdgeInsets.zero,
       leading: Container(
-          height: 22,
-          width: 24,
+          padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+          height: 28,
+          width: 28,
           decoration: BoxDecoration(
               color: color, borderRadius: BorderRadius.circular(4)),
-          child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 4),
-              child: leadingIcon != null
-                  ? SvgPicture.asset(
-                      leadingIcon ?? '',
-                    )
-                  : Image.asset(
-                      ImageConstants.userCheak,
-                    ))),
-      title: Text(
-        text.toString(),
-        style: TextStyle(
-            fontSize: 14,
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w400,
-            color: ColorConstant.pureWhite),
-      ),
-      trailing: Icon(
-        Icons.arrow_forward_ios,
-        color: ColorConstant.pureWhite,
-      ),
+          child: leadingIcon != null
+              ? SvgPicture.asset(
+                  leadingIcon ?? '',
+                )
+              : Image.asset(
+                  ImageConstants.userCheak,
+                )),
+      title: Text(text.toString(),
+          style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
+              color: ColorConstant.pureWhite)),
+      trailing: SvgPicture.asset(ImageConstants.arrowRight),
       onTap: onTap,
     );
   }

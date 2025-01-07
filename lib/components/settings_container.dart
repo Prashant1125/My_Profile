@@ -17,7 +17,7 @@ class SettingsContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SectionBreak(
-            sectionTitle: 'Personal Detail',
+            sectionTitle: 'Personal & Business',
             sectionDescription: Column(
               children: [
                 ElementTile(
@@ -34,7 +34,7 @@ class SettingsContainer extends StatelessWidget {
             ),
           ),
           SectionBreak(
-            sectionTitle: 'Membership',
+            sectionTitle: 'Memberships',
             sectionDescription: Column(
               children: [
                 ElementTile(
@@ -51,7 +51,7 @@ class SettingsContainer extends StatelessWidget {
             ),
           ),
           SectionBreak(
-            sectionTitle: 'Financial',
+            sectionTitle: 'Financials',
             sectionDescription: Column(
               children: [
                 ElementTile(
@@ -61,7 +61,7 @@ class SettingsContainer extends StatelessWidget {
                 ),
                 ElementTile(
                   leadingIcon: ImageConstants.exchange,
-                  text: 'Transation',
+                  text: 'Transactions',
                   color: ColorConstant.primaryBlue.withOpacity(.3),
                 ),
               ],
@@ -73,7 +73,7 @@ class SettingsContainer extends StatelessWidget {
               children: [
                 ElementTile(
                   leadingIcon: ImageConstants.settings,
-                  text: 'My Accounts',
+                  text: 'My Account',
                   color: ColorConstant.primaryBlue.withOpacity(.5),
                 ),
               ],

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_profile/components/profile_icon.dart';
 import 'package:my_profile/components/verification_status.dart';
 import 'package:my_profile/utils/color_constants.dart';
-
 import 'D1MM5_MYPROFILE/custom_list.dart';
 
 class ProfileOverviewTab extends StatelessWidget {
@@ -22,19 +21,17 @@ class ProfileOverviewTab extends StatelessWidget {
             title: Text(
               'Manager Name',
               style: TextStyle(
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Poppins',
                   fontStyle: FontStyle.italic,
                   fontSize: 25,
                   color: ColorConstant.pureWhite),
             ),
-            subtitle: Text(
-              'Manager/Owner',
-              style: TextStyle(
-                  fontSize: 14,
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.w500,
-                  color: ColorConstant.primaryGreen),
-            ),
+            subtitle: Text('Manager/Owner',
+                style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: ColorConstant.primaryGreen)),
             trailing: const VerificationStatus(
               status: 0,
             ),

@@ -14,14 +14,14 @@ class SectionBreak extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(sectionTitle,
               style: TextStyle(
-                  fontSize: 14,
-                  fontFamily: 'Poppins',
+                  fontSize: 16,
                   fontWeight: FontWeight.w700,
                   color: ColorConstant.offWhite)),
           const SizedBox(
@@ -29,7 +29,7 @@ class SectionBreak extends StatelessWidget {
           ),
           const Divider(
             height: .2,
-            thickness: .2,
+            thickness: .5,
           ),
           if (sectionDescription != null) sectionDescription!,
         ],

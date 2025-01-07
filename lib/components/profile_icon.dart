@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../utils/image_constants.dart';
 
 class ProfileIcon extends StatelessWidget {
@@ -24,7 +23,7 @@ class ProfileIcon extends StatelessWidget {
                     imageUrl ?? '',
                   )
                 : Image.asset(
-                    ImageConstants.avatar1,
+                    ImageConstants.avatar,
                   )),
         Positioned(
           bottom: 0,
