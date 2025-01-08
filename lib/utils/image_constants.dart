@@ -12,4 +12,8 @@ class ImageConstants {
   static const String exchange = 'assets/images/exchange.svg';
   static const String settings = 'assets/images/settings.svg';
   static const String arrowRight = 'assets/images/arrow_right.svg';
+  static const String camera = 'assets/images/camera.png';
+  static const String fileUploading = 'assets/images/file_uploading.png';
+  static const String fileSize = 'assets/images/size.png';
+  static const String timer = 'assets/images/timer.png';
 }

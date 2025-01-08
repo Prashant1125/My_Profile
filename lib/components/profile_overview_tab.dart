@@ -13,7 +13,7 @@ class ProfileOverviewTab extends StatelessWidget {
       height: 88,
       child: Card(
         elevation: 30,
-        color: ColorConstant.primaryBlue.withOpacity(.5),
+        color: ColorConstant.primaryBlue.withAlpha((0.5 * 255).round()),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: CustomListtile(

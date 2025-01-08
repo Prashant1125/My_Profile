@@ -8,11 +8,11 @@ class VerificationController extends GetxController {
   Color getColor(int status) {
     switch (status) {
       case 0:
-        return ColorConstant.sparentOverlay.withOpacity(.7);
+        return ColorConstant.sparentOverlay.withAlpha((0.7 * 255).round());
       case 1:
-        return ColorConstant.primaryGreen.withOpacity(.3);
+        return ColorConstant.primaryGreen.withAlpha((0.3 * 255).round());
       default:
-        return ColorConstant.sparentOverlay.withOpacity(.7);
+        return ColorConstant.sparentOverlay.withAlpha((0.7 * 255).round());
     }
   }
 

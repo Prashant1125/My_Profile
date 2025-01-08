@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:my_profile/D1MM5_profile/personal_detail.dart';
 import 'package:my_profile/components/D1MM5_MYPROFILE/element.dart';
 import 'package:my_profile/utils/image_constants.dart';
 
@@ -12,7 +14,7 @@ class SettingsContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 30,
-      color: ColorConstant.primaryBlue.withOpacity(.5),
+      color: ColorConstant.primaryBlue.withAlpha((0.5 * 255).round()),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -23,12 +25,15 @@ class SettingsContainer extends StatelessWidget {
                 ElementTile(
                   leadingIcon: ImageConstants.user,
                   text: 'Personal Details',
-                  color: ColorConstant.primaryBlue.withOpacity(.3),
+                  color:
+                      ColorConstant.primaryBlue.withAlpha((0.3 * 255).round()),
+                  onTap: () => Get.to(const PersonalDetail()),
                 ),
                 ElementTile(
                   leadingIcon: ImageConstants.profession,
                   text: 'My Business & Webpage',
-                  color: ColorConstant.primaryGreen.withOpacity(.3),
+                  color:
+                      ColorConstant.primaryGreen.withAlpha((0.3 * 255).round()),
                 ),
               ],
             ),
@@ -40,12 +45,14 @@ class SettingsContainer extends StatelessWidget {
                 ElementTile(
                   leadingIcon: ImageConstants.crown,
                   text: 'My Subscription & Plans',
-                  color: ColorConstant.chineBlack.withOpacity(.25),
+                  color: ColorConstant.chineBlack
+                    ..withAlpha((0.25 * 255).round()),
                 ),
                 ElementTile(
                   leadingIcon: ImageConstants.userCheak,
                   text: 'My Trainer',
-                  color: ColorConstant.sparentOverlay.withOpacity(.70),
+                  color: ColorConstant.sparentOverlay
+                      .withAlpha((0.70 * 255).round()),
                 ),
               ],
             ),
@@ -57,12 +64,13 @@ class SettingsContainer extends StatelessWidget {
                 ElementTile(
                   leadingIcon: ImageConstants.money,
                   text: 'Bank Accounts',
-                  color: ColorConstant.offWhite.withOpacity(.3),
+                  color: ColorConstant.offWhite.withAlpha((0.3 * 255).round()),
                 ),
                 ElementTile(
                   leadingIcon: ImageConstants.exchange,
                   text: 'Transactions',
-                  color: ColorConstant.primaryBlue.withOpacity(.3),
+                  color:
+                      ColorConstant.primaryBlue.withAlpha((0.3 * 255).round()),
                 ),
               ],
             ),
@@ -74,7 +82,8 @@ class SettingsContainer extends StatelessWidget {
                 ElementTile(
                   leadingIcon: ImageConstants.settings,
                   text: 'My Account',
-                  color: ColorConstant.primaryBlue.withOpacity(.5),
+                  color:
+                      ColorConstant.primaryBlue.withAlpha((0.5 * 255).round()),
                 ),
               ],
             ),

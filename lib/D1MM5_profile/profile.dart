@@ -15,7 +15,7 @@ class _MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorConstant.pureBlack.withOpacity(.5),
+      backgroundColor: ColorConstant.pureBlack.withAlpha((0.5 * 255).round()),
       body: SafeArea(
         child: Container(
           height: double.infinity,
@@ -36,7 +36,8 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   child: Divider(
                     thickness: 3,
-                    color: ColorConstant.primaryBlue.withOpacity(.5),
+                    color: ColorConstant.primaryBlue
+                        .withAlpha((0.5 * 255).round()),
                   ),
                 ),
                 const SettingsContainer()
