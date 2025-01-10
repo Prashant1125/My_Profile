@@ -22,7 +22,7 @@ class ElementTile extends StatelessWidget {
       contentPadding: EdgeInsets.zero,
       leading: Container(
           padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
-          height: 28,
+          height: 30,
           width: 28,
           decoration: BoxDecoration(
               color: color, borderRadius: BorderRadius.circular(4)),

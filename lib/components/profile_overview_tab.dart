@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:my_profile/components/profile_icon.dart';
 import 'package:my_profile/components/verification_status.dart';
 import 'package:my_profile/utils/color_constants.dart';
@@ -10,7 +11,7 @@ class ProfileOverviewTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 88,
+      height: Get.height * .1,
       child: Card(
         elevation: 30,
         color: ColorConstant.primaryBlue.withAlpha((0.5 * 255).round()),

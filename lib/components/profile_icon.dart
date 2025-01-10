@@ -10,8 +10,8 @@ class ProfileIcon extends StatelessWidget {
     return Stack(
       children: [
         Container(
-            height: 50,
-            width: 50,
+            height: 65,
+            width: 65,
             decoration: BoxDecoration(
                 border: Border.all(
                   width: 1.5,
