@@ -25,7 +25,7 @@ class ProfileOverviewTab extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Poppins',
                   fontStyle: FontStyle.italic,
-                  fontSize: 25,
+                  fontSize: 24,
                   color: ColorConstant.pureWhite),
             ),
             subtitle: Text('Manager/Owner',
