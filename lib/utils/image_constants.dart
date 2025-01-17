@@ -16,4 +16,6 @@ class ImageConstants {
   static const String fileUploading = 'assets/images/file_uploading.png';
   static const String fileSize = 'assets/images/size.png';
   static const String timer = 'assets/images/timer.png';
+  static const String radioSelected = 'assets/images/radio_selected.svg';
+  static const String radioUnselected = 'assets/images/radio_unselected.svg';
 }

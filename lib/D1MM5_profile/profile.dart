@@ -15,7 +15,7 @@ class _MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorConstant.pureBlack.withAlpha((0.5 * 255).round()),
+      backgroundColor: ColorConstant.darkGrey.withAlpha((0.5 * 255).round()),
       body: SafeArea(
         child: Container(
           height: double.infinity,

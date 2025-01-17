@@ -14,18 +14,20 @@ class UploadFileSmallSingle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var mq = MediaQuery.sizeOf(context);
+
     final ImagePickerController imagePickerController =
         Get.put(ImagePickerController());
 
     return SizedBox(
-      height: Get.height * .32,
+      height: mq.height * .27,
       child: DottedBorder(
         borderPadding: const EdgeInsets.all(10),
         padding: const EdgeInsets.all(35),
         borderType: BorderType.RRect,
         radius: const Radius.circular(10),
         dashPattern: const [10, 10],
-        color: ColorConstant.darkBlue,
+        color: ColorConstant.primaryBlue,
         strokeWidth: 2,
         child: Obx(() {
           return imagePickerController.pickedImage.value == null
@@ -75,7 +77,6 @@ class UploadFileSmallSingle extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                             fontSize: 18,
                             color: ColorConstant.pureWhite,
-                            decoration: TextDecoration.underline,
                           ),
                         ),
                         InkWell(
@@ -220,6 +221,8 @@ class UploadFileSmallSingle extends StatelessWidget {
                                   ),
                                 ],
                               ),
+                              // this button is create only for testing to increase the upload progress value.
+                              /*
                               InkWell(
                                 onTap: () {
                                   imagePickerController.uploadProgress.value +=
@@ -234,6 +237,7 @@ class UploadFileSmallSingle extends StatelessWidget {
                                       decorationThickness: 3),
                                 ),
                               )
+                              */
                             ],
                           ),
                         )

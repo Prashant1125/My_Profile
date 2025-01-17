@@ -13,9 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData(
-        textTheme: GoogleFonts.poppinsTextTheme(),
-      ),
+      theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
       debugShowCheckedModeBanner: false,
       title: 'My Profile App',
       home: const MyProfile(),

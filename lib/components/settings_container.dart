@@ -5,7 +5,7 @@ import 'package:my_profile/components/D1MM5_MYPROFILE/element.dart';
 import 'package:my_profile/utils/image_constants.dart';
 
 import '../utils/color_constants.dart';
-import 'D1MM5_MYPROFILE/section_break.dart';
+import 'character_input_field/section_break.dart';
 
 class SettingsContainer extends StatelessWidget {
   const SettingsContainer({super.key});
