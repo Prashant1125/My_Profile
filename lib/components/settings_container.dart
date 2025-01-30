@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:my_profile/D1MM5_profile/personal_detail.dart';
 import 'package:my_profile/components/D1MM5_MYPROFILE/element.dart';
 import 'package:my_profile/utils/image_constants.dart';
-
 import '../utils/color_constants.dart';
 import 'character_input_field/section_break.dart';
 

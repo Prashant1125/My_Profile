@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_profile/components/Global%20Components/buttons/primary_button.dart';
 import 'package:my_profile/components/Global%20Components/pin_input.dart';
 import 'package:my_profile/components/Global%20Components/text_input_field.dart';
 import 'package:my_profile/components/character_input_field/label.dart';
 import 'package:my_profile/utils/color_constants.dart';
 import '../components/D1MM5_MYPROFILE/contact_input.dart';
 import '../components/D1MM5_MYPROFILE/ctx_field.dart';
-import '../components/D1MM5_MYPROFILE/custom_elevated_button.dart';
 import '../components/D1MM5_MYPROFILE/date_input.dart';
 import '../components/Global Components/custum_expanded.dart';
 import '../components/Global Components/language_button.dart';
@@ -223,7 +223,7 @@ class PersonalDetail extends StatelessWidget {
                                 shrinkWrap: true,
                                 gridDelegate:
                                     const SliverGridDelegateWithFixedCrossAxisCount(
-                                        childAspectRatio: 96.67 / 35,
+                                        childAspectRatio: 96.67 / 43,
                                         crossAxisCount: 3,
                                         crossAxisSpacing: 4,
                                         mainAxisSpacing: 4),
@@ -260,11 +260,16 @@ class PersonalDetail extends StatelessWidget {
                                     color: ColorConstant.pureWhite),
                               )),
                           const SizedBox(height: 10.0),
-                          CustomElevatedButton(
-                              text: 'Update',
-                              height: screenWidth * (45 / 360),
-                              width: screenWidth * (324 / 360),
-                              onTap: () {})
+                          PrimaryButton(
+                            buttonWidth: screenWidth * (324 / 360),
+                            onTap: () {},
+                            backgroundColor: ColorConstant.primaryGreen,
+                            buttonHeight: screenWidth * (45 / 360),
+                            buttonText: 'Update',
+                            hasIcon: true,
+                            isEnabled: false,
+                            textColor: ColorConstant.pureBlack,
+                          ),
                         ],
                       ),
                     ),

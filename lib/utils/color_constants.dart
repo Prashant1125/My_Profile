@@ -10,4 +10,5 @@ class ColorConstant {
   static Color offWhite = const Color(0xFFF4F4F4);
   static Color darkBlue = const Color(0xFF2F5B6C);
   static Color darkGrey = const Color(0xFF063434);
+  static Color lightGrey = const Color(0xFFCCCCCC);
 }

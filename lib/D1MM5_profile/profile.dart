@@ -40,7 +40,7 @@ class _MyProfileState extends State<MyProfile> {
                         .withAlpha((0.5 * 255).round()),
                   ),
                 ),
-                const SettingsContainer()
+                const SettingsContainer(),
               ],
             ),
           ),

@@ -20,7 +20,7 @@ class UploadFileSmallSingle extends StatelessWidget {
         Get.put(ImagePickerController());
 
     return SizedBox(
-      height: mq.height * .27,
+      height: mq.height * .30,
       child: DottedBorder(
         borderPadding: const EdgeInsets.all(10),
         padding: const EdgeInsets.all(35),
@@ -204,7 +204,7 @@ class UploadFileSmallSingle extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   LinearPercentIndicator(
-                                    width: 200.0,
+                                    width: 180.0,
                                     lineHeight: 5.0,
                                     percent:
                                         0.20, //update the Value when implementing uploading a file to api by imagePickerController.uploading.value
