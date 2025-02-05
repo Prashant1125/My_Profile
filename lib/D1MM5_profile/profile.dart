@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_profile/components/header_manager/custom_app_bar.dart';
 import 'package:my_profile/components/profile_overview_tab.dart';
 import 'package:my_profile/utils/color_constants.dart';
 import 'package:my_profile/utils/image_constants.dart';
@@ -16,6 +17,7 @@ class _MyProfileState extends State<MyProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorConstant.darkGrey.withAlpha((0.5 * 255).round()),
+      appBar: const CustomAppBar(),
       body: SafeArea(
         child: Container(
           height: double.infinity,
@@ -28,6 +30,48 @@ class _MyProfileState extends State<MyProfile> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                const SizedBox(
+                  height: 20,
+                ),
+                const Text(
+                  'My Profile ',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Barlow Semi Condensed',
+                    height: 0,
+                  ),
+                ),
+                const Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Manage your account',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          height: 0,
+                        ),
+                      ),
+                      TextSpan(
+                        text: ' as your wish.',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          height: 0,
+                        ),
+                      ),
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
                 const ProfileOverviewTab(),
                 Padding(
                   padding: const EdgeInsets.symmetric(

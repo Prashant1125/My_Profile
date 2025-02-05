@@ -18,5 +18,8 @@ class ImageConstants {
   static const String timer = 'assets/images/timer.png';
   static const String radioSelected = 'assets/images/radio_selected.svg';
   static const String radioUnselected = 'assets/images/radio_unselected.svg';
-  static const String iciciBank = 'assets/images/icici.png';
+  static const String appbarBackButton = 'assets/images/appbar_back_button.png';
+  static const String bellIcon = 'assets/images/bell_icon.png';
+  static const String hamburgerThreeDots =
+      'assets/images/hamburger_three_dots.png';
 }
